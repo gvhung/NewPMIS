@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+  <class name="PMIS.Model.Bm_Table, PMIS.Model" table="Bm_Table">
+    <id name="bm_id" column="bm_id" type="int" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="bm_code" column="bm_code" type="string"  />
+    <property name="bm_lx" column="bm_lx" type="string"  />
+    <property name="bm_mc" column="bm_mc" type="string"  />
+    <property name="bm_sort" column="bm_sort" type="string"  />
+    <property name="bm_lxmc" column="bm_lxmc" type="string"  />
+    <property name="Version" column="Version" type="int"  />
+
+  </class>
+</hibernate-mapping>

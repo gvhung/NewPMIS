@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+  <class name="PMIS.Model.PM_Sljl, PMIS.Model" table="PM_Sljl">
+    <id name="pm_ID" column="pm_ID" type="int" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="pm_UID" column="pm_UID" type="int"  />
+    <property name="pm_BId" column="pm_BId" type="Guid"  />
+    <property name="pm_Sltime" column="pm_Sltime" type="DateTime"  />
+    <property name="pm_Tjtime" column="pm_Tjtime" type="DateTime"  />
+    <property name="pm_Zt" column="pm_Zt" type="string"  />
+
+  </class>
+</hibernate-mapping>

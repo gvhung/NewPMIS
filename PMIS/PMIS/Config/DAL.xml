@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="Repository.Module" type="PMIS.DAL.ModuleRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="Repository.Product" type="PMIS.DAL.ProductRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.BmInfo" type="PMIS.DAL.BmInfoRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.Resource" type="PMIS.DAL.ResourceRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.RoleFp" type="PMIS.DAL.RoleFpRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.Role" type="PMIS.DAL.RoleRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.User" type="PMIS.DAL.UserRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="Repository.RDetail" type="PMIS.DAL.RDetailRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+</objects>
+

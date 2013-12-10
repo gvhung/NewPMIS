@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_User, PMIS.Model" table="PM_User">
+		<id name="pm_UserID" column="pm_UserID" type="int" unsaved-value="0">
+      			<generator class="native" />       			
+      	</id>      		
+		<property name="pm_UserName" column="pm_UserName" type="string"  />
+		<property name="pm_UserLogin" column="pm_UserLogin" type="string"  />
+		<property name="pm_UserPassword" column="pm_UserPassword" type="string"  />
+		<property name="pm_State" column="pm_State" type="string"  />
+		<property name="Version" column="Version" type="int"  />
+    <bag name="RoleFpList" generic="true" inverse="true" cascade="all-delete-orphan" table="PM_RoleFp">
+      <key column="pm_TRFpUid" foreign-key="FK_PM_RoleFp_PM_User" />
+      <one-to-many class="PM_RoleFp"/>
+    </bag>	
+	</class>
+</hibernate-mapping>

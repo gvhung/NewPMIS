@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="Manager.Module" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.ModuleManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.Module"/>
+      </object>
+    </property>
+  </object>
+
+  <object id="Manager.Product" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.ProductManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.Product"/>
+      </object>
+    </property>
+  </object>
+
+  <object id="Manager.RDetail" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.RDetailManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.RDetail"/>
+      </object>
+    </property>
+  </object>
+
+  <object id="Manager.Resource" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.ResourceManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.Resource"/>
+      </object>
+    </property>
+  </object>
+
+  <object id="Manager.RoleFp" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.RoleFpManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.RoleFp"/>
+       
+      </object>
+    </property>
+  </object>
+  <object id="Manager.Role" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.RoleManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.Role"/>
+      </object>
+    </property>
+  </object>
+  <object id="Manager.User" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.UserManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.User"/>
+      </object>
+    </property>
+  </object>
+  <object id="Manager.BmInfo" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.BmInfoManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.BmInfo"/>
+      </object>
+    </property>
+  </object>
+
+
+</objects>
+

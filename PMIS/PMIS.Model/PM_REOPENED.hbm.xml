@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_REOPENED, PMIS.Model" table="PM_REOPENED">
+		<id name="pm_ID" column="pm_ID" type="int" unsaved-value="0">
+      			      			
+      	</id>      		
+		<property name="pm_BId" column="pm_BId" type="Guid"  />
+		<property name="pm_SckfrId" column="pm_SckfrId" type="int"  />
+		<property name="pm_ScCsrId" column="pm_ScCsrId" type="int"  />
+		<property name="pm_BcCsrId" column="pm_BcCsrId" type="int"  />
+		<property name="pm_REOPENEDTime" column="pm_REOPENEDTime" type="DateTime"  />
+		<property name="pm_Zt" column="pm_Zt" type="string"  />
+				
+	</class>
+</hibernate-mapping>

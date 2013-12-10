@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_Role, PMIS.Model" table="PM_Role">
+		<id name="pm_TRId" column="pm_TRId" type="int" unsaved-value="0">
+      			<generator class="native" />       			
+      	</id>      		
+		<property name="pm_TRNanme" column="pm_TRNanme" type="string"  />
+		<property name="pm_TRFid" column="pm_TRFid" type="int"  />
+		<property name="pm_TRBz" column="pm_TRBz" type="string"  />
+		<property name="pm_TRState" column="pm_TRState" type="string"  />
+		<property name="Version" column="Version" type="int"  />
+    <bag name="ReFpList" generic="true" inverse="true" cascade="all-delete-orphan" table="PM_ReFp">
+      <key column="pm_TRId" />
+      <one-to-many class="PM_ReFp"/>
+    </bag>
+    <!--<bag name="RoleFpList" generic="true" inverse="true" cascade="all-delete-orphan" table="PM_RoleFp" lazy="true">
+      <key column="pm_TRFpRid" foreign-key="FK_PM_RoleFp_PM_Role" />
+      <one-to-many class="PM_RoleFp"/>
+    </bag>-->
+  </class>
+</hibernate-mapping>

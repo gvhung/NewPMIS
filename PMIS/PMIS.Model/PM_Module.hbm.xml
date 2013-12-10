@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_Module, PMIS.Model" table="PM_Module">
+    <id name="pm_TMGuid"  type="Guid" >
+      <column name="pm_TMGuid" index="PK_PM_Module"></column>
+      <generator class="assigned" />
+    </id>
+    <property name="pm_TMid" column="pm_TMid" type="int"  insert="false" update="false" />
+    <property name="pm_TMModuleName" column="pm_TMModuleName" type="string"  />
+    <property name="pm_TMModuleLead" column="pm_TMModuleLead" type="string"  />
+    <property name="pm_TMModuleAddTime" column="pm_TMModuleAddTime" type="DateTime"  />
+    <property name="pm_TMModuleAddUser" column="pm_TMModuleAddUser" type="string"  />
+    <property name="pm_TMModuleModifyUser" column="pm_TMModuleModifyUser" type="string"  />
+    <property name="pm_TMModuleModifyTime" column="pm_TMModuleModifyTime" type="DateTime"  />
+    <property name="pm_TMFid" column="pm_TMFid" type="int"  />
+    <property name="pm_TMState" column="pm_TMState" type="string"  />
+    <property name="Version" column="Version" type="int"  />
+    <property name="pm_TPGuid" column="pm_TPGuid" type="Guid"  />
+    <property name="pm_TMWd" column="pm_TMWd" type="string"  />
+				
+	</class>
+</hibernate-mapping>

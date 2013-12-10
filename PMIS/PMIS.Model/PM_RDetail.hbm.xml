@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_RDetail, PMIS.Model" table="PM_RDetail">
+		<id name="pm_TRRDId" column="pm_TRRDId" type="int" unsaved-value="0">
+      			<generator class="native" />       			
+      	</id>      		
+		<property name="pm_TRRRid" column="pm_TRRRid" type="int"  />
+		<property name="pm_TRRReId" column="pm_TRRReId" type="int"  />
+		<property name="Version" column="Version" type="int"  />
+				
+	</class>
+</hibernate-mapping>

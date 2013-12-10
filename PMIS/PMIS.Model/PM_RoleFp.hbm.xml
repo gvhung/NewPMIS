@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_RoleFp, PMIS.Model" table="PM_RoleFp">
+		<id name="pm_TRFpId" column="pm_TRFpId" type="int" unsaved-value="0">
+      			<generator class="native" />       			
+      	</id>      		
+		<property name="pm_TRFpUid" column="pm_TRFpUid" type="int"  />
+		<property name="pm_TRFpRid" column="pm_TRFpRid" type="int"  />
+    <many-to-one name="User" column="pm_TRFpUid" class="PM_User" not-null="true"
+                  cascade="save-update" foreign-key="FK_PM_RoleFp_PM_User"/>
+    <many-to-one name="Role" column="pm_TRFpRid" class="PM_Role" not-null="true"
+                  cascade="save-update" foreign-key="FK_PM_RoleFp_PM_Role"/>
+  </class>
+</hibernate-mapping>

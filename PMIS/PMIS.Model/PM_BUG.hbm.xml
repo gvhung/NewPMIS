@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_BUG, PMIS.Model" table="PM_BUG">
+		<id name="pm_ID" column="pm_ID" type="string" unsaved-value="0">
+      			      			
+      	</id>      		
+		<property name="pm_Lead" column="pm_Lead" type="string"  />
+		<property name="pm_Pc" column="pm_Pc" type="string"  />
+		<property name="pm_PID" column="pm_PID" type="Guid"  />
+		<property name="pm_MID" column="pm_MID" type="Guid"  />
+		<property name="pm_Ver" column="pm_Ver" type="string"  />
+		<property name="pm_Cshj" column="pm_Cshj" type="string"  />
+		<property name="pm_CsrId" column="pm_CsrId" type="int"  />
+		<property name="pm_Qttj" column="pm_Qttj" type="string"  />
+		<property name="pm_Yzcd" column="pm_Yzcd" type="string"  />
+		<property name="pm_Yxj" column="pm_Yxj" type="string"  />
+		<property name="pm_Czbz" column="pm_Czbz" type="string"  />
+		<property name="pm_Qwjg" column="pm_Qwjg" type="string"  />
+		<property name="pm_Sjjg" column="pm_Sjjg" type="string"  />
+		<property name="pm_Cxpl" column="pm_Cxpl" type="string"  />
+		<property name="pm_Bz" column="pm_Bz" type="string"  />
+		<property name="pm_Zt" column="pm_Zt" type="string"  />
+    <property name="pm_Title" column="pm_Title" type="string"  />
+	</class>
+</hibernate-mapping>

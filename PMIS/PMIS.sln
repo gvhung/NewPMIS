@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS", "PMIS\PMIS.csproj", "{2D870E8F-FBA3-46CE-BE29-CF1D96B5A2E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS.Model", "PMIS.Model\PMIS.Model.csproj", "{350E999A-6FB0-4E98-AC1F-C6FADAE23058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS.BLL", "PMIS.BLL\PMIS.BLL.csproj", "{2AAD4BB9-38BA-4548-A2D8-28E86A10222F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS.IDAL", "PMIS.IDAL\PMIS.IDAL.csproj", "{95402141-7178-47EA-8144-2E95394F3035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS.DAL", "PMIS.DAL\PMIS.DAL.csproj", "{A0B9B11B-7292-4E07-9CC8-D32709D2222C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMIS.Comm", "PMIS.Comm\PMIS.Comm.csproj", "{0F4A7B2B-5BC0-4277-B6A4-AF2FCCEC7D0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{75F7CCC8-E209-4F4F-907E-2A3F57E0FF20}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Common.Logging.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Common.Logging.dll
+		..\..\..\..\WorkSpace\Practise\NHibernate\资源文件\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll = ..\..\..\..\WorkSpace\Practise\NHibernate\资源文件\NHibernate-3.3.3.GA-bin\Required_Bins\Iesi.Collections.dll
+		..\..\..\..\WorkSpace\Practise\NHibernate\资源文件\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll = ..\..\..\..\WorkSpace\Practise\NHibernate\资源文件\NHibernate-3.3.3.GA-bin\Required_Bins\NHibernate.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Aop.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Aop.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Core.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Core.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.NHibernate32.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.NHibernate32.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.NHibernate33.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Data.NHibernate33.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Web.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Web.dll
+		..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Web.Mvc.dll = ..\..\..\..\ftp\学习资料\Spring.net实战开发%28NHibernate3、MVC4、MemCache、Log4NET实战宠物商店%29\Spring.net实战开发(NHibernate3、MVC4、MemCache、Log4NET实战宠物商店)\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\debug\Spring.Web.Mvc.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D870E8F-FBA3-46CE-BE29-CF1D96B5A2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D870E8F-FBA3-46CE-BE29-CF1D96B5A2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D870E8F-FBA3-46CE-BE29-CF1D96B5A2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D870E8F-FBA3-46CE-BE29-CF1D96B5A2E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350E999A-6FB0-4E98-AC1F-C6FADAE23058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350E999A-6FB0-4E98-AC1F-C6FADAE23058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350E999A-6FB0-4E98-AC1F-C6FADAE23058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350E999A-6FB0-4E98-AC1F-C6FADAE23058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AAD4BB9-38BA-4548-A2D8-28E86A10222F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAD4BB9-38BA-4548-A2D8-28E86A10222F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAD4BB9-38BA-4548-A2D8-28E86A10222F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAD4BB9-38BA-4548-A2D8-28E86A10222F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95402141-7178-47EA-8144-2E95394F3035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95402141-7178-47EA-8144-2E95394F3035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95402141-7178-47EA-8144-2E95394F3035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95402141-7178-47EA-8144-2E95394F3035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B9B11B-7292-4E07-9CC8-D32709D2222C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B9B11B-7292-4E07-9CC8-D32709D2222C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B9B11B-7292-4E07-9CC8-D32709D2222C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B9B11B-7292-4E07-9CC8-D32709D2222C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4A7B2B-5BC0-4277-B6A4-AF2FCCEC7D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4A7B2B-5BC0-4277-B6A4-AF2FCCEC7D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4A7B2B-5BC0-4277-B6A4-AF2FCCEC7D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4A7B2B-5BC0-4277-B6A4-AF2FCCEC7D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

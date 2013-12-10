@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_Resource, PMIS.Model" table="PM_Resource">
+		<id name="pm_TReid" column="pm_TReid" type="int" unsaved-value="0">
+      			<generator class="native" />       			
+      	</id>      		
+		<property name="pm_TRName" column="pm_TRName" type="string"  />
+		<property name="pm_TRType" column="pm_TRType" type="string"  />
+		<property name="pm_TRState" column="pm_TRState" type="string"  />
+		<property name="pm_TRFid" column="pm_TRFid" type="int"  />
+		<property name="Version" column="Version" type="int"  />
+		<property name="pm_TRURL" column="pm_TRURL" type="string"  />
+		<property name="pm_TRIMG" column="pm_TRIMG" type="string"  />
+    <property name="pm_TRpysx" column="pm_TRpysx" type="string"  />
+  
+  </class>
+</hibernate-mapping>

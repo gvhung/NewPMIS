@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+  <class name="PMIS.Model.PM_ReFp, PMIS.Model" table="PM_ReFp">
+    <id name="id" column="id" type="int" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="pm_TReid" column="pm_TReid" type="int"  />
+    <property name="pm_TRId" column="pm_TRId" type="int"  />
+    <property name="pm_TRIsRead" column="pm_TRIsRead" type="bool"  />
+    <property name="pm_TRIsCreate" column="pm_TRIsCreate" type="bool"  />
+    <property name="pm_TRIsEdit" column="pm_TRIsEdit" type="bool"  />
+    <property name="pm_TRIsDelete" column="pm_TRIsDelete" type="bool"  />
+    <many-to-one name="Resource" column="pm_TReid" class="PM_Resource" not-null="true"
+                 cascade="save-update" foreign-key="FK_PM_ReFp_PM_Resource"/>
+    
+    <!--<many-to-one name="Role" column="pm_TRId" class="PM_Role" not-null="true"
+                  cascade="save-update" foreign-key="FK_PM_ReFp_PM_Role"/>-->
+  </class>
+</hibernate-mapping>

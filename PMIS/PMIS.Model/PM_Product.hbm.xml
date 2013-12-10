@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+	<class name="PMIS.Model.PM_Product, PMIS.Model" table="PM_Product">
+    <id name="pm_TPGuid"  type="Guid" >
+      <column name="pm_TPGuid" index="PK_PM_Product"></column>
+      <generator class="assigned" />
+    </id>
+    <property name="pm_TPId" column="pm_TPId" type="int"  insert="false" update="false" />
+    <property name="pm_TPName" column="pm_TPName" type="string"  />
+    <property name="pm_TPLead" column="pm_TPLead" type="string"  />
+    <property name="pm_TPAddtime" column="pm_TPAddtime" type="DateTime"  />
+    <property name="pm_TPAddUser" column="pm_TPAddUser" type="string"  />
+    <property name="pm_TPModifyTime" column="pm_TPModifyTime" type="DateTime"  />
+    <property name="pm_TPModifyUser" column="pm_TPModifyUser" type="string"  />
+    <property name="pm_TPVersion" column="pm_TPVersion" type="string"  />
+    <property name="pm_TPState" column="pm_TPState" type="string"  />
+    <property name="pm_TPFId" column="pm_TPFId" type="int"  />
+    <property name="Version" column="Version" type="int"  />
+    <property name="pm_TPJjfaName" column="pm_TPJjfaName" type="string"  />
+    <property name="pm_TPWd" column="pm_TPWd" type="string"  />
+    <property name="pm_TPCreateTime" column="pm_TPCreateTime" type="DateTime"  />
+    <one-to-one
+       name="AddUser" class="PM_User"  />
+    <one-to-one
+       name="ModifyUser" class="PM_User"  />
+	</class>
+</hibernate-mapping>
