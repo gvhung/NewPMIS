@@ -16,15 +16,14 @@
        }
     });
 }
-
  
 
 function ajaxFileUpload() {
     $.ajaxFileUpload(
         {
-            url: 'update.do?method=uploader',            //需要链接到服务器地址
+            url: '/ProductManager/Upload',            //需要链接到服务器地址
             secureuri: false,
-            fileElementId: 'houseMaps',                        //文件选择框的id属性
+            fileElementId: 'fileToUpload',                        //文件选择框的id属性
             dataType: 'text',                                     //服务器返回的格式，可以是json
             success: function(data, status)            //相当于java中try语句块的用法
             {
@@ -33,10 +32,9 @@ function ajaxFileUpload() {
                 var msg = strs[1].split(':');
                 var path = strs[2].split(':');
                 if (state[1] / 1 == 1) {
-                    $("#zp").attr('src', path[1]);
                     $("#filePath").val(path[1]);
-                }
-                else {
+                    $("#result").html("上传成功");
+                } else {
                     $.messager.alert('系统提示', msg[1], 'error');
                 }
             },
@@ -104,7 +102,21 @@ function Save() {
     var params = "pm_TPFId=" + $("#pm_TPFId").val() + "&pm_TPName=" + $("#pm_TPName").val()
         + "&pm_TPLead=" + $("#pm_TPLead").val() + "&pm_TPJjfaName=" + $("#pm_TPJjfaName").val()
         + "&pm_TPVersion=" + $("#pm_TPVersion").val() + "&pm_TPCreateTime=" + $("#pm_TPCreateTime").val()
-        + "&filePath=" + $("#filePath").val()+"&sm=";
+        + "&filePath=" + $("#filePath").val() + "&sm=" + sm;
+    params = encodeURI(params);
+    $.ajax({
+        url: "/ProductManager/AddFun",
+        data: params,
+        type: 'post',
+        async: false,
+        success: function(res) {
+            if (parseInt(res.State) == 1) {
+                window.location.href = document.referrer;
+            } else {
+                $.message.alert(res.Msg);
+            }
+        }
+    });
 }
 
 

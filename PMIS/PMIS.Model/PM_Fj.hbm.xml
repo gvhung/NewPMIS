@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="PMIS.Model" namespace="PMIS.Model">
+  <class name="PMIS.Model.PM_Fj, PMIS.Model" table="PM_Fj">
+    <id name="id" column="id" type="int" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="guid" column="guid" type="Guid"  />
+    <property name="relative_path" column="relative_path" type="string"  />
+    <property name="fullname" column="fullname" type="string"  />
+    <property name="filename" column="filename" type="string"  />
+    <property name="accLevel" column="accLevel" type="string"  />
+    <property name="accUId" column="accUId" type="string"  />
+
+  </class>
+</hibernate-mapping>

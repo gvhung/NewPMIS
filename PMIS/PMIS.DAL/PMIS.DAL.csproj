@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BmInfoRepository.cs" />
+    <Compile Include="FjRepository.cs" />
     <Compile Include="ModuleRepository.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -62,7 +62,14 @@
       </object>
     </property>
   </object>
-
+  <object id="Manager.Fj" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="PMIS.BLL.Impl.FjManager, PMIS.BLL">
+        <property name="CurrentRepository" ref="Repository.Fj"/>
+      </object>
+    </property>
+  </object>
+  
 
 </objects>
 

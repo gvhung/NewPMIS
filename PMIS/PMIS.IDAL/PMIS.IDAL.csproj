@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBmInfoRepository.cs" />
+    <Compile Include="IFjRepository.cs" />
     <Compile Include="IModuleRepository.cs" />
     <Compile Include="IProductRepository.cs" />
     <Compile Include="IRDetailRepository.cs" />

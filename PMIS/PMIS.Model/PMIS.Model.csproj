@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bm_Table.cs" />
+    <Compile Include="PM_Fj.cs" />
     <Compile Include="PM_BUG.cs" />
     <Compile Include="PM_Module.cs" />
     <Compile Include="PM_Product.cs" />
@@ -66,6 +67,9 @@
     <EmbeddedResource Include="PM_RoleFp.hbm.xml" />
     <EmbeddedResource Include="PM_Sljl.hbm.xml" />
     <EmbeddedResource Include="PM_User.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PM_Fj.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

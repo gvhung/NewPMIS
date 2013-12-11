@@ -28,7 +28,7 @@
                 <th>创建时间：</th><td><input id="pm_TPCreateTime" type="text" onclick="WdatePicker()"/></td>
                 <th>附件：</th><td colspan=""><img id="loading " src="../../Scripts/Plugin/jquery.ajaxfileupload/loading.gif" style="display:none;"/>
                                 <input id="fileToUpload " type="file" size="20" name="fileToUpload " />
-<a class="button" id="buttonUpload" onclick="ajaxFileUpload();">上传</a><input type="hidden" id="filePath"/></td>
+<a class="button" id="buttonUpload" onclick="ajaxFileUpload();">上传</a><input type="hidden" id="filePath"/><span id="result"></span></td>
                 </tr>
                 <tr>
                 <th>说明：</th>

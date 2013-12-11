@@ -26,6 +26,8 @@
   <object id="Repository.RDetail" type="PMIS.DAL.RDetailRepository, PMIS.DAL">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
-
+  <object id="Repository.Fj" type="PMIS.DAL.FjRepository, PMIS.DAL">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
 </objects>
 

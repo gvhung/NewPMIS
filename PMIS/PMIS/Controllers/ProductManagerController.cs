@@ -16,6 +16,8 @@ namespace PMIS.Controllers
         // GET: /Product/
         public  IProductManager iProductManager { get; set; }
         public IUserManager iUserManager { get; set; }
+        public IFjManager iFjManager { get; set; }
+
         public ActionResult Index()
         {
             return View();
@@ -48,7 +50,7 @@ namespace PMIS.Controllers
                         Directory.CreateDirectory(uploadPath);
                     }
                     fileData.SaveAs(uploadPath + fileName);
-
+                    ViewData["fileName"] = fileName;
                     res = "state:1,msg:上传成功！,path:/file/productfile/" + fileName + "";
 
                 }
@@ -92,7 +94,7 @@ namespace PMIS.Controllers
             return Json(pager, JsonRequestBehavior.AllowGet);
         }
 
-        
+
 
         public ActionResult AddFun()
         {
@@ -100,15 +102,23 @@ namespace PMIS.Controllers
             try
             {
                 PM_Product pmProduct = this.GetProductBeanComm();
-                pmProduct.pm_TPAddUser =Convert.ToString((Session["User"] as PM_User).pm_UserID);
+                pmProduct.pm_TPAddUser = Convert.ToString((Session["User"] as PM_User).pm_UserID);
                 pmProduct.pm_TPAddtime = DateTime.Now;
                 pmProduct.pm_TPState = "0";
                 pmProduct.pm_TPModifyTime = DateTime.Now;
                 pmProduct.pm_TPModifyUser = "";
                 pmProduct.pm_TPGuid = Guid.NewGuid();
                 String filePath = Request.Params["filePath"];
-                
                 iProductManager.Save(pmProduct);
+                if (!string.IsNullOrEmpty(filePath))
+                {
+                    PM_Fj fj = new PM_Fj();
+                    fj.filename = filePath.Substring(filePath.LastIndexOf('/'));
+                    fj.fullname = Server.MapPath("~/file/productfile/");
+                    fj.guid = pmProduct.pm_TPGuid;
+                    fj.relative_path = filePath;
+                    iFjManager.Save(fj);
+                }
                 returnObj.State = 1;
                 returnObj.Msg = "添加成功！";
             }
@@ -119,6 +129,8 @@ namespace PMIS.Controllers
             }
             return Json(returnObj, JsonRequestBehavior.AllowGet);
         }
+
+
 
         private PM_Product GetProductBeanComm()
         {

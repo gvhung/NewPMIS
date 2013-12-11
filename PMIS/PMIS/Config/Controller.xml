@@ -22,6 +22,7 @@
   <object type="PMIS.Controllers.ProductManagerController,  PMIS" singleton="false" >
     <property name="iProductManager" ref="Manager.Product"/>
     <property name="iUserManager" ref="Manager.User"/>
+    <property name="iFjManager" ref="Manager.Fj"></property>
   </object>
   <object type="PMIS.Controllers.RoleManagerController, PMIS" singleton="false" >
     <property name="iRoleManager" ref="Manager.Role"/>

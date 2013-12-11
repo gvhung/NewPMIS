@@ -41,10 +41,12 @@
   <ItemGroup>
     <Compile Include="IBmInfoManager.cs" />
     <Compile Include="IBugManager.cs" />
+    <Compile Include="IFjManager.cs" />
     <Compile Include="IGenericManager.cs" />
     <Compile Include="IModuleManager.cs" />
     <Compile Include="Impl\BmInfoManager.cs" />
     <Compile Include="Impl\BugManagercs.cs" />
+    <Compile Include="Impl\FjManager.cs" />
     <Compile Include="Impl\GenericManagerBase.cs" />
     <Compile Include="Impl\ModuleManager.cs" />
     <Compile Include="Impl\ProductManager.cs" />
